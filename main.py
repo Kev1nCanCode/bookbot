@@ -1,8 +1,6 @@
-from stats import count_words, count_chars
+from stats import count_words, count_chars,print_report, sorted_dict, sort_dict_helper
 
 def main():
-    total_words = count_words("books/frankenstein.txt")
-    print(f"Found {total_words} total words")
+    print_report("books/frankenstein.txt")
 
-    print(count_chars("books/frankenstein.txt"))
 main()
